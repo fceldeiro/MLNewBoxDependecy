@@ -1,0 +1,10 @@
+target 'MLNewBoxDependecy', :exclusive => true do
+  pod "MLNewBoxDependecy", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "MLNewBoxDependecy", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
