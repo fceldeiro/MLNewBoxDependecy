@@ -7,6 +7,7 @@
 //
 
 #import "MLViewController.h"
+#import <MLNewBoxDependecy/MLNewBox.h>
 
 @interface MLViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    MLNewBox * newBox = [[MLNewBox alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    [self.view addSubview:newBox];
 }
 
 - (void)didReceiveMemoryWarning
